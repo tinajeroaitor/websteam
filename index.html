@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web videojocs</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            background-color: #252525;
+            color: white;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        .header {
+            justify-items: center;
+        }
+
+        .header .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .links a:hover{
+            transform: scaleY(1.075) scaleX(1.075);
+        }
+        
+        .header hr {
+        	margin-top: 10px;
+        }
+
+
+
+
+
+
+        .cards{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.cards h2.header{
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services{
+  display: flex;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.content .fab{
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content > *{
+  flex: 1 1 100%;
+}
+.content:hover{
+  color: white;
+}
+.content:hover a{
+  border-color: white;
+  background: white;
+}
+.content-1:hover{
+  border-color: #f21d1d;
+  background: #f21d1d;
+}
+.content-1:hover a{
+  color: #f21d1d;
+}
+.content-2:hover{
+  border-color: #E1306C;
+  background: #E1306C;
+}
+.content-2:hover a{
+  color: #E1306C;
+}
+.content h2{
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.content a{
+  margin: 22px 0;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>JOCS STEAM</h1>
+        <div class="links">
+            <a href="#">Concurs de TV</a>
+            <a href="#">Monopoli d'Esparreguera</a>
+        </div>
+        <hr>
+    </div>
+
+    <div class="cards">
+        <h2 class="header">
+           Coneix els nostres jocs!
+        </h2>
+        <div class="services">
+           <div class="content content-1">
+              <div class="fab">
+            <img src="https://esparreguera.cat/recursos/adjunts/image_module_image/image/escut-esparreguera-a31d3e/original" alt="concurs de televisió" width="50%">
+              </div>
+              <h2>
+                 Monopoli d'Esparreguera
+              </h2>
+              <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              </p>
+              <a href="#">Coneixer mes</a>
+           </div>
+           <div class="content content-1">
+            <div class="fab">
+            <img src="https://media.istockphoto.com/id/1392667870/es/vector/programa-de-preguntas-de-televisi%C3%B3n-con-participantes-que-responden-preguntas-y-obtendr%C3%A1n.jpg?s=612x612&w=0&k=20&c=oGfv_7alj3vSrCOd2DiZ7rE94hPJZL3w2N5GpJPiXUw=" alt="concurs de televisió" width="50%">
+                  </div>
+                  <h2>
+                     Concurs de TV
+                  </h2>
+                  <p>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  </p>
+                  <a href="#">Coneixer mes</a>
+           </div>
+        </div>
+     </div>
+</body>
+
+</html>
+
