@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Regles - Monopoli d'Esparreguera</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            background-color: #252525;
+            color: white;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        .header {
+            justify-items: center;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .links a:hover{
+            transform: scaleY(1.075) scaleX(1.075);
+        }
+        
+        .header hr {
+        	margin-top: 10px;
+        }
+        .contingut h2.header {
+            font-size: 40px;
+            text-align: center;
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contingut table {
+            border: 1px solid white;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0;
+        }
+
+        th,td {
+            width: 50%;
+            border: 1px solid white;
+        }
+
+        tbody th {
+            text-align: justify;
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="../">JOCS STEAM</a></h1>
+        <div class="links">
+            <a href="/websteam/concurstv">Concurs de TV</a>
+            <a href="/websteam/monopoli">Monopoli d'Esparreguera</a>
+        </div>
+        <hr>
+    </div>
+
+    <div class="contingut">
+        <h2 class="header">
+           Regles i funcionament
+        </h2>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">Funcionament</th>
+                </tr>
+                <tr>
+                    <th>Inici</th>
+                    <th>A cada jugador se li assigna una peça i es reparteixen els diners inicials que seran de x per jugador. Després es decideix un ordre per llençar, l'ordre és indiferent, però aquest mateix ordre s'haurà de respectar durant tota la partida. Els jugadors en el seu torn tiren un dau de 6 números i avancen les caselles que indiqui el dau una vegada ja llençat, s'haurà de comptar les caselles sense tenir en compte en la què ja estàs.</th>
+                </tr>
+                <tr>
+                    <th>Objectiu</th>
+                    <th>El joc acaba quan un jugador obté totes les caselles possibles. És a dir, l'objectiu és aconseguir totes les caselles que es puguin comprar.</th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">El material</th>
+                </tr>
+                <tr>
+                    <th>Els jugadors</th>
+                    <th>Mínim 3 jugadors i màxim 5 jugadors.</th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">Reglament de les caselles</th>
+                </tr>
+                <tr>
+                    <th>Casella de subasta</th>
+                    <th>Al taulell, es trobaran dues caselles on, qui caigui primer, es posa una carta a subasta. Aquesta carta podrà ser comprada per tothom i, qui inverteixi més, se l’emporta i haurà de complir l’acció, sigui bona o dolenta.</th>
+                </tr>
+                <tr>
+                    <th>Casella start</th>
+                    <th>Cada cop que es passi per la casella start, la banca haurà de pagar x espàrrecs al jugador que hagi passat.</th>
+                </tr>
+                <tr>
+                    <th>Casella ajuntament</th>
+                    <th>El primer que caigui a la casella de l’ajuntament, tingui els suficients diners per comprar-lo serà l‘alcalde del poble i els altres jugadors si cauen allà hauran de pagar l’impost a l’alcalde.</th>
+                </tr>
+                <tr>
+                    <th>Ateneu</th>
+                    <th>Aquesta casella és propietat de l’ajuntament. Quan algú consegui aquesta propietat, els altres hauran de pagar x d’impostos que aniran al propietari.</th>
+                </tr>
+                <tr>
+                    <th>Casella de situació</th>
+                    <th>Una casella en què cada vegada que algú caigui, s’agafarà una carta de situació on es doni a conèixer una situació que pugui afectar o no als jugadors (vagues, crisis, desastres…)</th>
+                </tr>
+                <tr>
+                    <th>El CAP</th>
+                    <th>Aquesta casella serà sempre part de l’Estat. Així, cada vegada que un jugador caigui en aquesta casella haurà de pagar una quantitat per rebre atenció mèdica.</th>
+                </tr>
+                <tr>
+                    <th>La policía</th>
+                    <th>Si caus a la casella de la policia hauràs d'estar al calabós durant dues tirades o pagar-ne x.</th>
+                </tr>
+                <tr>
+                    <th>Santa Eulàlia</th>
+                    <th>Si caus i no té propietari no has de fer res a no ser que ho vulguis comprar per el seu preu. Si té propietari hauràs de pagar x.</th>
+                </tr>
+                <tr>
+                    <th>IES El Cairat</th>
+                    <th>Si caus en aquesta casella es tindrà de pagar x cada vegada que passis per davant de la casella durant 4 vegades. Si durant o després d'aquest procés caus una altra vegada en aquesta casella no hauràs de pagar res. El pagament se li haurà de donar al propietari si té o a la banca si no té propietari.</th>
+                </tr>
+                <tr>
+                    <th>IES El Castell</th>
+                    <th>Si caus en aquesta casella es tindrà de pagar x cada vegada que passis per davant de la casella durant 4 vegades. Si durant o després d'aquest procés caus una altra vegada en aquesta casella no hauràs de pagar res. El pagament se li haurà de donar al propietari si té o a la banca si no té propietari.</th>
+                </tr>
+                <tr>
+                    <th>IES El Puig</th>
+                    <th>Si caus en aquesta casella es tindrà de pagar x cada vegada que passis per davant de la casella durant 4 vegades. Si durant o després d'aquest procés caus una altra vegada en aquesta casella no hauràs de pagar res. El pagament se li haurà de donar al propietari si té o a la banca si no té propietari.</th>
+                </tr>
+                <tr>
+                    <th>Plaça de la pagesia</th>
+                    <th>Si caus en aquesta casella no passa res, és una casella neutra no es pot ni comprar ni aconseguir.</th>
+                </tr>
+                <tr>
+                    <th>Plaça del centre</th>
+                    <th>Si caus en aquesta casella no passa res, és una casella neutra no es pot ni comprar ni aconseguir.</th>
+                </tr>
+                <tr>
+                    <th>Plaça de la constitució</th>
+                    <th>Si caus en aquesta casella no passa res, és una casella neutra no es pot ni comprar ni aconseguir.</th>
+                </tr>
+                <tr>
+                    <th>Teatre la Passió</th>
+                    <th>Si caus en aquesta casella i no és de ningú tindràs l'opció o de no fer res i esperar el teu torn següent o comprar-la pel seu valor. Després de comprar-la si pagues el doble del seu valor podràs construir dins la passió un Casino, això et donarà més guanys si algú cau al teu casino. En cas de caure tenint amo hauràs de pagar x a l'amo, en cas que aquesta casella s'hagi millorat a casino perdràs un torn i hauràs de pagar x.</th>
+                </tr>
+                <tr>
+                    <th>Colònia Sedo</th>
+                    <th>Es podrà comprar per x si és de la banca, un cop comprat es podrà pagar x per poder restaurar-la i convertir-la en una fàbrica funcional, cada vegada que passis per l'inici se't donarà x pels guanys de la fàbrica. Si caus en aquesta casella i és d'un altre jugador o de la banca i no el vols comprar no hauràs de pagar res.</th>
+                </tr>
+                <tr>
+                    <th>Escoles Primàries</th>
+                    <th>Et pot tocar a la subasta, la pots comprar a raíz d’això i quan ja la tinguis comprada, amb figures de casetes ho pots convertir amb el que tu vulguis i no ser una escola.</th>
+                </tr>
+                <tr>
+                    <th>Sistema de compra i venda</th>
+                    <th>Si la casella és de la banca es podrà comprar pel seu valor inicial i si és d'un jugador se li podrà fer una oferta per la casella, sempre ha de ser superior al valor inicial i la decisió sempre serà del propietari a acceptar o no. Per vendre una casella de la teva propietat tens dues opcions, o vendre-la a la banca pel seu valor inicial o vendre-la a un altre jugador com a mínim pel seu valor inicial. Si un jugador durant la partida està en números negatius significa que ha perdut, a no ser que un altre jugador li presti prou diners per tornar a estar en positiu, el jugador no estarà obligat a tornar aquests diners prestats a no ser que en el pacte s'hagi dit que estarà obligat a tornar els diners prestats, decisió del que deixa aquests diners si s'han de tornar amb comissió o sense. També per poder evitar quedar-se en números negatius es podrà vendre caselles de la teva propietat a altres jugadors o la banca.</th>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+
+     <script>
+       document.onkeydown = function(e) {
+         if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+           return false
+         }
+         return false;
+       };
+     </script>
+</body>
+
+</html>
