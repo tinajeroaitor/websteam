@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Economia - Monopoli d'Esparreguera</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            background-color: #252525;
+            color: white;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        .header {
+            justify-items: center;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .links a:hover{
+            transform: scaleY(1.075) scaleX(1.075);
+        }
+        
+        .header hr {
+        	margin-top: 10px;
+        }
+
+        .contingut h2.header {
+            font-size: 40px;
+            text-align: center;
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contingut table {
+            border: 1px solid white;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0;
+        }
+
+        th, td {
+            width: 50%;
+            border: 1px solid white;
+        }
+
+        tbody th {
+            text-align: justify;
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="../">JOCS STEAM</a></h1>
+        <div class="links">
+            <a href="/websteam/concurstv">Concurs de TV</a>
+            <a href="/websteam/monopoli">Monopoli d'Esparreguera</a>
+        </div>
+        <hr>
+    </div>
+
+    <div class="contingut">
+        <h2 class="header">
+            Economia i interacció entre jugadors
+        </h2>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">Requisits mínims</th>
+                </tr>
+                <tr>
+                    <th>Tipus de moneda o recursos</th>
+                    <th>
+                        Espàrrecs, monedes oficials dels espàrrecs:
+                        <ul>
+                            <li>1K espàrrecs</li>
+                            <li>5K espàrrecs</li>
+                            <li>10K espàrrecs</li>
+                            <li>20K espàrrecs</li>
+                            <li>50K espàrrecs</li>
+                            <li>100K espàrrecs</li>
+                            <li>200K espàrrecs</li>
+                            <li>500K espàrrecs</li>
+                        </ul>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">Sistema d’ingressos i despeses</th>
+                </tr>
+                <tr>
+                    <th>Com guanyen diners els jugadors?</th>
+                    <th>Ingreses diners comprant béns, quan els altres jugadors cauen al teu bé.</th>
+                </tr>
+                <tr>
+                    <th>Com perden diners els jugadors?</th>
+                    <th>Tens despeses per comprar els béns que vols, posant-los a la banca compartida i amb els impostos per pagar.</th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">Equilibrar la dificultat del joc</th>
+                </tr>
+                <tr>
+                    <th>Dificultat del joc</th>
+                    <th>No ha de ser massa fàcil acumular riquesa, però tampoc massa difícil progressar.</th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">Elements d’interacció</th>
+                </tr>
+                <tr>
+                    <th>Possibilitat de negocis entre jugadors</th>
+                    <th>Els jugadors poden fer negocis entre ells, per exemple compartir carrers i guanyar junts en funció de les accions dels altres.</th>
+                </tr>
+                <tr>
+                    <th>Banca Compartida</th>
+                    <th>Els jugadors poden tenir una banca conjunta amb un altre jugador on poden comprar carrers conjunts. Els guanys es reparteixen a parts iguals entre els jugadors que comparteixin banca. No es podrà fer en la casella de subasta.</th>
+                </tr>
+                <tr>
+                    <th colspan="3" style="text-align: center; font-size: 30px;">Préstecs i Ajudes</th>
+                </tr>
+                <tr>
+                    <th>Préstecs</th>
+                    <th>La banca pot donar un sol préstec en tota la partida que com a màxim pot ser de 200K espàrrecs. Quan aquests diners siguin prestats, el jugador haurà de tornar el doble abans de comprar qualsevol altra propietat.</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+       document.onkeydown = function(e) {
+         if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+           return false
+         }
+         return false;
+       };
+     </script>
+</body>
+
+</html>
