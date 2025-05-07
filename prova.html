@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Concurs de TV</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            background-color: #252525;
+            color: white;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        .header {
+            justify-items: center;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .links a:hover{
+            transform: scaleY(1.075) scaleX(1.075);
+        }
+        
+        .header hr {
+        	margin-top: 10px;
+        }
+        .contingut h2.header {
+            font-size: 40px;
+            text-align: center;
+            margin: 0 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contingut .contingut img {
+            justify-self: center;
+            width: 50%;
+            height: 50%;
+            display: block;
+        }
+
+        .contingut .contingut .llegenda {
+            margin-top: 30px;
+            overflow: auto;
+            justify-self: center;
+            width: 80%;
+        }
+                
+        .contingut .contingut .llegenda table {
+            border: 1px solid #dededf;
+            height: 100%;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 1px;
+            text-align: center;
+        }
+                
+        .contingut .contingut .llegenda td {
+            border: 1px solid white;
+            background-color: #80808060;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="../">JOCS STEAM</a></h1>
+        <div class="links">
+            <a href="/websteam/concurstv">Concurs de TV</a>
+            <a href="/websteam/monopoli">Monopoli d'Esparreguera</a>
+        </div>
+        <hr>
+    </div>
+
+    <div class="contingut">
+        <h2 class="header">
+            Disseny del taulell i estructura del joc
+        </h2>
+
+        <div class="contingut">
+            <div class="imatge">
+                <img src="https://i.ibb.co/GfNpcWQT/casino.png" alt="imatge">
+            </div>
+
+            <embed src="/assets/Jocs de taula.pdf" type="application/pdf" width="80%" height="80%">
+        </div>
+     </div>
+
+     <script>
+       document.onkeydown = function(e) {
+         if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+           return false
+         }
+         return false;
+       };
+     </script>
+</body>
+
+</html>
