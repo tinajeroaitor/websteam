@@ -51,6 +51,28 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+        .contingut .targetes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 3rem;
+        }
+
+        .contingut .targetes .targeta {
+            border: 2px solid #e7e7e7;
+            border-radius: 4px;
+            padding: .5rem;
+            
+            & img {
+            	width: 100%;
+                height: 100%;
+          	}
+
+            & h3 {
+            	margin-top: 0px;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -66,10 +88,39 @@
 
     <div class="contingut">
         <h2 class="header">
-            Disseny del taulell i estructura del joc
+           Preguntes de categoria general
         </h2>
 
-        <embed src="./assets/Jocs de taula.pdf" type="application/pdf">
+        <div class="targetes">
+            <div class="targeta">
+                <img src="https://em-content.zobj.net/source/google/412/scroll_1f4dc.png" width="300px" height="250px" alt="Logo sc">
+                <h3>HISTÒRIA</h3>
+            </div>
+            <div class="targeta">
+                <img src="https://em-content.zobj.net/source/google/412/books_1f4da.png" width="300px" height="250px" alt="Logo sc">
+                <h3>LITERATURA</h3>
+            </div>
+            <div class="targeta">
+                <img src="https://em-content.zobj.net/source/google/412/globe-showing-europe-africa_1f30d.png" width="300px" height="250px" alt="Logo sc">
+                <h3>GEOGRAFÍA</h3>
+            </div>
+            <div class="targeta">
+                <img src="https://em-content.zobj.net/source/google/412/soccer-ball_26bd.png" width="300px" height="250px" alt="Logo sc">
+                <h3>ESPORTS</h3>
+            </div>
+            <div class="targeta">
+                <img src="https://em-content.zobj.net/source/google/412/drum_1f941.png" width="300px" height="250px" alt="Logo sc">
+                <h3>MUSICA</h3>
+            </div>
+            <div class="targeta">
+                <img src="https://em-content.zobj.net/source/google/412/newspaper_1f4f0.png" width="300px" height="250px" alt="Logo sc">
+                <h3>ACTUALITAT</h3>
+            </div>
+            <div class="targeta">
+                <img src="https://images.emojiterra.com/google/android-12l/512px/1f4da.png" width="300px" height="250px" alt="Logo sc">
+                <h3><a style="text-decoration: none; color: white;" href="https://drive.google.com/file/d/1VK0SZiz4fITIC17RvbnttqSffGA2Tg6F/view?usp=sharing" target="_blank">ACCEDEIX A LES PREGUNTES</a></h3>
+            </div>
+        </div>
      </div>
 
      <script>
